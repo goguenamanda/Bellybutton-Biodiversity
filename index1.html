@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row bg-dark">
+      <div class="col-md-12 jumbotron text-center white-text" style="background-image: url(https://d2jx2rerrg6sh3.cloudfront.net/image-handler/ts/20211117125942/ri/673/picture/2021/11/shutterstock_1042543318.jpg)">
+        <h1 class="white-text">Belly Button Biodiversity Dashboard</h1>
+        <p class="white-text">Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center white-text">
+        <h2 class="white-text">Project Overview</h2>
+        <p class="aliceblue-text">This is an analysis of data on bellybutton bacteria biodiversity. Bacteria type and population had a clear relationship to the frequency in which the subject of the study washed their bellybutton. </p>
+      </div>
+    </div>
+    <div class="row bg-dark">
+      <div class="col-md-2 bg-dark">
+        <div class="well bg-dark">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body bg-dark"></div>
+        </div>
+      </div>
+      <div class="col-md-5 bg-dark">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5 bg-dark">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 bg-dark">
+        <div id="bubble"></div>
+      </div>
+    </div>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- <script src="plots.js"></script> -->
+  <script src="static/js/charts.js"></script>
+
+</body>
+
+</html>
